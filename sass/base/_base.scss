@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 675px) {
+  header {
+    text-align: center;
+  }
+
+  .container {
+    &__nav {
+      flex-direction: column;
+    }
+  }
+}
