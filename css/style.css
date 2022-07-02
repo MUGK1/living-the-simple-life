@@ -42,6 +42,8 @@ main {
   header {
     text-align: center; }
   .container__nav {
+    flex-direction: column; }
+  .container__flex {
     flex-direction: column; } }
 
 .no-margin-top {
@@ -104,6 +106,8 @@ main {
 
 .column-1 {
   width: 70%; }
+  .column-1__articles {
+    margin-bottom: 3.4rem; }
   .column-1__head {
     padding-bottom: 2rem;
     border-bottom: 1px solid #707070;
@@ -112,7 +116,8 @@ main {
     width: 100%;
     height: 17rem;
     object-fit: cover;
-    object-position: bottom; }
+    object-position: bottom;
+    display: block; }
   .column-1__para {
     margin-bottom: 2em; }
   .column-1__articles {
@@ -127,6 +132,29 @@ main {
     height: 15rem;
     object-fit: cover;
     object-position: center; }
+
+@media (max-width: 675px) {
+  .column-1 {
+    width: 100%;
+    position: relative; }
+    .column-1__articles {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .column-1__div .column-1__date {
+      position: absolute;
+      right: 0; }
+    .column-1__div .column-1__titel {
+      margin-top: 1rem; }
+    .column-1__imgdiv {
+      width: 100%; }
+    .column-1__textdiv {
+      width: 100%; }
+    .column-1__img2 {
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      object-position: center; } }
 
 .column-1__date {
   font-size: 0.875rem;
@@ -173,6 +201,10 @@ span {
   flex-direction: column;
   justify-content: flex-start;
   width: 25%; }
+  .column-2__posts:not(:last-child) {
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1.8rem; }
   .column-2__posts h3 {
     font-weight: 400;
     font-size: 1.125rem; }
@@ -181,3 +213,12 @@ span {
     padding: 1rem; }
   .column-2__img {
     width: 100%; }
+
+@media (max-width: 675px) {
+  .column-2 {
+    width: 100%; }
+    .column-2__img {
+      width: 100%;
+      height: 5.5rem;
+      object-fit: cover;
+      object-position: center; } }
