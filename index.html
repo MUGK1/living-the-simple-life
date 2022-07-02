@@ -33,7 +33,7 @@
     </header>
 
     <main>
-      <section class="container">
+      <section class="container container__flex">
         <div class="column-1">
           <article class="column-1__head">
             <img
@@ -46,9 +46,11 @@
             <p class="column-1__para">
               <span> Life can get complicated really quickly</span>, but it
               doesn't have to be! There are many ways to simplify your life,
-              <a href="#">a few of which we've explored in the past</a> . This
-              week we're taking a bit of a approach though, in how you can find
-              simplicity in the life you already living.
+              <a href="#" class="column-1__link"
+                >a few of which we've explored in the past</a
+              >
+              . This week we're taking a bit of a approach though, in how you
+              can find simplicity in the life you already living.
             </p>
             <a href="#" class="btn">continue reading</a>
           </article>
@@ -61,7 +63,9 @@
               </div>
 
               <div class="column-1__textdiv">
-                <h1 class="column-1__titel">Keeping cooking simple</h1>
+                <h1 class="column-1__titel no-margin-top">
+                  Keeping cooking simple
+                </h1>
                 <p class="column-1__para">
                   Food is a very important part of everyone's life. If you want
                   to be healthy, you have to eat healthy. One of the easiest
@@ -82,7 +86,9 @@
               </div>
 
               <div class="column-1__textdiv">
-                <h1 class="column-1__titel">Simplicity and work</h1>
+                <h1 class="column-1__titel no-margin-top">
+                  Simplicity and work
+                </h1>
                 <p class="column-1__para">
                   Work is often a major source of stress. People get frustrated,
                   it ruins their relationship with others and it leads to
@@ -95,12 +101,18 @@
 
             <div class="column-1__articles">
               <div class="column-1__imgdiv">
-                <img src="images/deco.jpg" alt="life" class="column-1__img2" />
+                <img
+                  src="images/deco.jpg"
+                  alt="life"
+                  class="column-1__img2 position-left"
+                />
                 <p class="column-1__date">July 3, 2019 | 3 comments</p>
               </div>
 
               <div class="column-1__textdiv">
-                <h1 class="column-1__titel">Simple decorations</h1>
+                <h1 class="column-1__titel no-margin-top">
+                  Simple decorations
+                </h1>
                 <p class="column-1__para">
                   A home isn't a home until you've decorated a little. People
                   either don't decorate, or they go overboard and it doesn't
@@ -114,8 +126,8 @@
           </article>
         </div>
 
-        <div class="column-2">
-          <article class="column-2__sidebar">
+        <aside class="column-2">
+          <article class="column-2__sidebar margin-bottom">
             <h2 class="column-2__header">About me</h2>
             <img
               src="images/about-me.jpg"
@@ -130,20 +142,25 @@
           <article class="column-2__sidebar">
             <h2 class="column-2__header">Recent Posts</h2>
             <div class="column-2__posts">
-              <img src="images/food.jpg" alt="food" class="column-2__img2" />
-              <p class="column-1__titel">Keeping cooking simple</p>
+              <img src="images/food.jpg" alt="food" class="column-2__img" />
+              <h3 class="column-1__titel">Keeping cooking simple</h3>
             </div>
             <div class="column-2__posts">
-              <img src="images/work.jpg" alt="work" class="column-2__img2" />
-              <p class="column-1__titel">Simplicity and work</p>
+              <img src="images/work.jpg" alt="work" class="column-2__img" />
+              <h3 class="column-1__titel">Simplicity and work</h3>
             </div>
             <div class="column-2__posts">
-              <img src="images/deco.jpg" alt="deco" class="column-2__img2" />
-              <p class="column-1__titel">Simple decorations</p>
+              <img src="images/deco.jpg" alt="deco" class="column-2__img" />
+              <h3 class="column-1__titel">Simple decorations</h3>
             </div>
           </article>
-        </div>
+        </aside>
       </section>
     </main>
+
+    <footer class="footer">
+      <h4 class="footer__header">Living the Simple Life</h4>
+      <p class="footer__copyrights">Copyright 2022</p>
+    </footer>
   </body>
 </html>

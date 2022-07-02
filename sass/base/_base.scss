@@ -1,11 +1,39 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
   background-color: #f8f8f8;
   padding: 2em 0;
+  margin-bottom: 3.375rem;
+}
+
+main {
+  margin-bottom: 4.3125rem;
+}
+
+.footer {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #143774;
+  align-items: center;
+
+  &__header,
+  &__copyrights {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    opacity: 54%;
+    margin: 0;
+  }
+
+  &__copyrights {
+    font-weight: 400;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -14,6 +42,11 @@ header {
   margin: 0 auto;
 
   &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__flex {
     display: flex;
     justify-content: space-between;
   }

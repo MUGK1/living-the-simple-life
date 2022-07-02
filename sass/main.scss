@@ -1,2 +1,8 @@
-@import "components/nav";
 @import "base/base";
+@import "base/mixins";
+
+@import "components/nav";
+@import "components/first-column";
+@import "components/typography";
+@import "components/home";
+@import "components/second-column";

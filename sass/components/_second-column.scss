@@ -1,0 +1,22 @@
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+
+  &__posts {
+    h3 {
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+  }
+
+  &__sidebar {
+    border: 20px solid #ebebeb;
+    padding: 1rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
