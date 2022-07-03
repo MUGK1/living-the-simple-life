@@ -55,6 +55,17 @@ main {
 .margin-bottom {
   margin-bottom: 2.8rem; }
 
+.no-border-bottom {
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+  margin-bottom: 0 !important; }
+
+.img-full {
+  max-height: 300px;
+  width: 100%;
+  margin-bottom: 2em;
+  object-fit: cover; }
+
 .logo__header {
   margin: 0;
   font-size: 2rem;
@@ -67,6 +78,7 @@ main {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   color: #1792d2;
+  letter-spacing: 2.4px;
   margin: 0; }
 
 .nav__ul {
@@ -130,22 +142,27 @@ main {
   .column-1__img2 {
     width: 100%;
     height: 15rem;
-    object-fit: cover;
-    object-position: center; }
+    object-fit: cover; }
+
+@media (min-width: 500px) {
+  .column-1__div .column-1__date {
+    text-align: right; }
+  .column-1__div .column-1__titel {
+    margin-top: -1.6em; } }
+
+@media (min-width: 676px) {
+  .column-1__div .column-1__date {
+    text-align: left; }
+  .column-1__div .column-1__titel {
+    margin-top: 1em; } }
 
 @media (max-width: 675px) {
   .column-1 {
-    width: 100%;
-    position: relative; }
+    width: 100%; }
     .column-1__articles {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
-    .column-1__div .column-1__date {
-      position: absolute;
-      right: 0; }
-    .column-1__div .column-1__titel {
-      margin-top: 1rem; }
     .column-1__imgdiv {
       width: 100%; }
     .column-1__textdiv {
@@ -177,6 +194,10 @@ main {
 span {
   font-weight: 700; }
 
+.special-typography {
+  font-size: 1.312rem;
+  color: #1792d2; }
+
 .btn {
   color: #1792d2;
   text-transform: uppercase;
@@ -200,7 +221,9 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 25%; }
+  width: 25%;
+  min-width: 200px;
+  margin-left: 1em; }
   .column-2__posts:not(:last-child) {
     padding-bottom: 0.4em;
     border-bottom: 1px solid #707070;
@@ -216,7 +239,8 @@ span {
 
 @media (max-width: 675px) {
   .column-2 {
-    width: 100%; }
+    width: 100%;
+    margin-left: 0; }
     .column-2__img {
       width: 100%;
       height: 5.5rem;

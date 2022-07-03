@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Khaled Almansour" />
     <title>Simple Life</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap"
@@ -22,13 +21,15 @@
         <nav class="nav">
           <ul class="nav__ul">
             <li class="nav__el">
-              <a href="index.html" class="nav__a nav__current">HOME</a>
+              <a href="index.html" class="nav__a">HOME</a>
             </li>
             <li class="nav__el">
               <a href="about-me.html" class="nav__a">ABOUT ME</a>
             </li>
             <li class="nav__el">
-              <a href="recent-posts.html" class="nav__a">RECENT POSTS</a>
+              <a href="recent-posts.html" class="nav__a nav__current"
+                >RECENT POSTS</a
+              >
             </li>
           </ul>
         </nav>
@@ -38,27 +39,28 @@
     <main>
       <section class="container container__flex">
         <div class="column-1">
-          <article class="column-1__head">
-            <img
-              src="images/life.jpg"
-              alt="image of a desktop"
-              class="column-1__img"
-            />
-            <p class="column-1__date">July 23, 2019 | 3 comments</p>
-            <h1 class="column-1__titel">Finding simplicity in life</h1>
-            <p class="column-1__para">
-              <span> Life can get complicated really quickly</span>, but it
-              doesn't have to be! There are many ways to simplify your life,
-              <a href="#" class="column-1__link"
-                >a few of which we've explored in the past</a
-              >
-              . This week we're taking a bit of a approach though, in how you
-              can find simplicity in the life you already living.
-            </p>
-            <a href="#" class="btn">continue reading</a>
-          </article>
-
           <article class="column-1__div">
+            <div class="column-1__articles">
+              <div class="column-1__imgdiv">
+                <img src="images/life.jpg" alt="life" class="column-1__img2" />
+                <p class="column-1__date">July 23, 2019 | 3 comments</p>
+              </div>
+
+              <div class="column-1__textdiv">
+                <h1 class="column-1__titel no-margin-top">
+                  Finding simplicity in life
+                </h1>
+                <p class="column-1__para">
+                  life Life can get complicated really quickly, but it doesn't
+                  have to be! There are many ways to simplify your life, a few
+                  of which we've explored in the past. This week we're taking a
+                  bit of a approach though, in how you can find simplicity in
+                  the life you already living.
+                </p>
+                <a href="#" class="btn">continue reading</a>
+              </div>
+            </div>
+
             <div class="column-1__articles">
               <div class="column-1__imgdiv">
                 <img src="images/food.jpg" alt="food" class="column-1__img2" />

@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 25%;
+  min-width: 200px;
+  margin-left: 1em;
 
   &__posts {
     &:not(:last-child) {
@@ -30,6 +32,7 @@
 @media (max-width: 675px) {
   .column-2 {
     width: 100%;
+    margin-left: 0;
 
     &__img {
       width: 100%;
